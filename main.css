@@ -191,3 +191,53 @@ li a:hover {
 	margin:0 auto;
 	width:100px;
 }
+
+/* CSS pour acceuil*/
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+}
+
+/* CSS pour a propos*/
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 50px;
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  margin: 8px;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/**/
