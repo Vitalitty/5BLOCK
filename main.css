@@ -116,37 +116,34 @@ form.research::after {
 /* /////////////////////////////////////// */ 
 /* ////////////////FOOTER//////////////// */ 
 /* ///////////////////////////////////// */ 
-.footer {
-  position: relative;
-  left: 0;
+
+footer {
+
   bottom: 0;
-  height: 90px;
+background-color: #282d32;
   width: 100%;
-  background-color: #282d32;
+  height:125px;
   color: white;
-display: inline-block;
+	display: inline-block;
 
 }
 
-#container {
-	width:75%;
-	
-}
+
 #left {
   font-size:25px;
-  padding-left:40px;
   float:left;
-
-	
+  width:40%; 
+  height:100%;
+  text-align:center;
 }
+
+
 #right {
 	float:right;
-	text-align:center;
+	  height:100%;
+	 width:60%; 
 }
-#center {
-	
-	
-}
+
 
 
 /* ////////////////////////////////////////////// */ 
