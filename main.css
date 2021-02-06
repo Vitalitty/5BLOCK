@@ -1,0 +1,61 @@
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url('images\\pdd.jpg');
+  background-size: cover;
+}
+.access {
+    background: rgba(0, 0, 0, 0.3);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #282d32;
+  color: white;
+  text-align: center;
+}
+
+#container {
+	width:100%;
+}
+#left {
+	float:left;
+	width:100px;
+}
+#right {
+	float:right;
+	width:100px;
+}
+#center {
+	margin:0 auto;
+	width:100px;
+}
