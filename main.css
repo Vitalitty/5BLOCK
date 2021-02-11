@@ -153,7 +153,22 @@ background-color: #282d32;
 	 width:60%; 
 }
 
-
+/* ////////////////////////////////////////////// */ 
+/* ////////////////VENDRE CONTENT//////////////// */ 
+/* //////////////////////////////////////////// */
+.card-index-add {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  margin: 8px;
+  cursor: pointer;
+	background-color:#5669AA;
+	
+}
+.mbv {
+	text-align:center;
+	font-size:30px;
+	justify-content: center;
+	font-weight: bold;
+}
 
 /* ////////////////////////////////////////////// */ 
 /* ////////////////INDEX CONTENT//////////////// */ 
