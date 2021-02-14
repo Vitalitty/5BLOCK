@@ -397,28 +397,19 @@ tbody{
 
 @media screen and (max-width: 1344px) {
   .wrapper{
-    width: 95%;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .wrapper{
-    width: 95%;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
   }
 }
 
 @media screen and (max-width: 760px) {
   .wrapper{
-    width: 95%;
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
   }
 }
 
@@ -434,20 +425,20 @@ tbody{
   color: white;
 }
 
-/* .column {
-  float: left;
-  width: 25%;
-  margin-bottom: 50px;
-}
-
 .card {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
   margin: 8px;
 }
 
+.card:hover{
+	background: #F5F5F5;
+}
+
 .card img{
-  width: 100%;
   border-radius: 50%;
+  width: 96%;
+  object-fit: cover;
+  padding: 2%;
 }
 
 .container {
@@ -464,16 +455,23 @@ tbody{
   color: grey;
 }
 
-#row{
-  width: 95%;
-  margin-left: 2.5%;
-} */
-
 .wrapper3{
   width: 95%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+}
+
+@media screen and (max-width: 1344px) {
+  .wrapper3{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper3{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* //////////////////////////////////////// */ 
@@ -716,4 +714,29 @@ tbody{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (max-width: 1024px) {
+  #detail_gauche {
+    width: 100%;
+    float: none;
+    height:auto;
+    display: block;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+  }
+
+  #detail_droite {
+    width: 100%;
+    float: none;
+    height:auto;
+    display: block;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+  }
+  .prev {
+    display: block;
+  }
 }
