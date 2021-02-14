@@ -54,7 +54,7 @@
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 					
 				</div>
-			
+				
 				<script>
 					var slideIndex = 1;
 					showSlides(slideIndex);
@@ -89,18 +89,17 @@
 					<form class="form-detail">
 						<fieldset>
 							<legend><span class="number">1</span> Informations générales</legend>
-							<input type="text" name="field1" placeholder="Titre du bien">
-							<input type="number" name="field2" placeholder="Prix du bien">
-							<p>Importer des images : <input type="file" name="field3"></p>
-							<input type="text" name="field4" placeholder="Ville">
-							<input type="number" name="field5" placeholder="Surface du bien">
+							<div id="text">Titre : C'est une maison</div>
+							<div id="number">Prix : 2 000 000 $</div>
+							<div id="text">Ville : Clermont-Ferrand</div>
+							<div id="number">Surface : 1000 m2</div>
 						</fieldset>
 						<fieldset>
 							<legend><span class="number">2</span> Description du bien</legend>
-							<textarea name="field6" placeholder="Description du bien"></textarea>
+							<div id="textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan ligula. Sed sed diam pretium, molestie eros eu, tristique ex. Duis pharetra elit mi, ac molestie turpis pretium a. Aenean ac dapibus neque, sed suscipit magna. Aliquam finibus nibh eu cursus consectetur. Ut lorem erat, semper et augue ut, tempus rhoncus orci. Phasellus molestie dolor at quam egestas, et luctus ante feugiat. Duis ornare metus vitae semper hendrerit. Praesent vel erat ante. Ut vel bibendum leo. Morbi dignissim arcu sed odio efficitur dictum in in risus. Proin non sapien sem. Suspendisse ac mollis libero. Proin et arcu dictum, malesuada.</div>
 						</fieldset>
-						<input type="submit" value="Soumettre les modifications" />
-					</form>	
+						<input type="submit" value="Acheter" />
+					</form>
 			</div>
 		</div>
 
@@ -120,7 +119,7 @@
 				<a href="a_propos.html" id="p-right" class="no-deco">A Propos&nbsp;&#9654;</a>
 			</div>
 		</footer>
-
+		
 	</body>
 
 </html>
