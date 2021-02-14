@@ -3,6 +3,7 @@ body, html {
   padding: 0;
   width:100%;
   height:100%;
+  min-width: 600px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -25,25 +26,30 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -91,14 +97,39 @@ table {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
+  .header a {
+    float: none;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+  }
+
+  .header-right {
+    float: none;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
   .header a {
     float: none;
     display: block;
-    text-align: left;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
   }
+
   .header-right {
     float: none;
+    display: block;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
   }
 }
 
@@ -106,49 +137,44 @@ table {
 /* ////////////////SEARCH//////////////// */ 
 /* ///////////////////////////////////// */  
 
-.forms-search{
-  width: 100%;
-  height: 70px;
-  background-color: #282d32;
-  position: relative;	
-}
-
 .research{
+  height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 form.research select{
-  height:60px;
+  padding: 0;
+  border : none;
+  height:100%;
   margin-right:5px;
-  margin-top:5px;
   width: 25%;
   font-size: 25px;
-  
 }
 
 /* Style the search field */
 form.research input[type=text] {
-  height: 54px;
+  padding: 0;
+  border: none;
+  height: 100%;
   font-size: 25px;
   width: 45%;
   background: white;
   margin-right:5px;
-  margin-top:5px;
 }
 
 /* Style the submit button */
 form.research button {
+  padding: 0;
   float: left;
   width: 5%;
-  height: 60px;
+  height: 100%;
   background: BLACK;
   color: white;
   font-size: 17px;
-  border-left: none; /* Prevent double borders */
+  border: none; /* Prevent double borders */
   cursor: pointer;
-  margin-top:5px;
 }
 
 form.research button:hover {
@@ -185,75 +211,120 @@ footer {
 
 #right {
 	float:right;
-	  height:100%;
-	 width:60%; 
+	height:100%;
+	width:60%; 
 }
 
 #p-left{
 	margin-top:45px;
 }
+
 #p-right{
 	font-size:20px;
 	margin-top:10px;
-	
+}
+
+@media screen and (max-width: 760px) {
+  footer{
+    height:auto;
+  }
+
+  #left {
+    width: 100%;
+    float: none;
+    height:auto;
+    display: block;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  #right {
+    width: 100%;
+    float: none;
+    height:auto;
+    display: block;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+  }
+
+  #p-left{
+    padding-top: 10px;
+    margin-top:0px;
+  }
+
+  #p-right{
+    margin-top:0px;
+    padding-bottom: 10px;
+  }
+
 }
 
 /* ////////////////////////////////////////////// */ 
 /* ////////////////VENDRE CONTENT//////////////// */ 
 /* //////////////////////////////////////////// */
-.content-title{
-	text-align: center;
-}
-.div-vendre{
-	display: inline-block;
-	height: 66px;
+
+.wrapper2{
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-.content-img{
-	height:45px;
-	margin-left:45px;
-	border: 3px solid blacks;
-	border-radius: 50%;
-	margin-top:15px;
+#titre{
+  width: 100%;
+  justify-content: center;
+  text-align:center;
+  height: 100px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
 }
-.h1-vendre{
-	font-size: 35px;
-	
 
-	margin-bottom:15px;
-	 display: inline-block;
+#plus_div{
+  display: block;
+  height: 100px;
+  width: 100%;
+  font-size: 25px;
 }
-.card-index-add {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
-  margin: 8px;
-  cursor: pointer;
-	background-color:#5669AA;
-	
+
+#plus{
+  margin-right: 10%;
+  height: 100%;
+  width: 50%;
+  float: right;
 }
-.mbv {
-	text-align:center;
-	font-size:30px;
-	justify-content: center;
-	font-weight: bold;
+
+#plus span{
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#plus span a{
+  font-size: 35px;
+  text-decoration: none;
 }
 
 /* ////////////////////////////////////////////// */ 
 /* ////////////////INDEX CONTENT//////////////// */ 
 /* //////////////////////////////////////////// */
 
-
-
 .h2-index{
 	font-weight: bold;
 	text-decoration: none;
 	color: Black;
-	margin-left:25px;
 	width:100%;
 	font-size:35px;
 	margin-top:0px;
 	margin-bottom:5px;
-
+  text-align: center;
 }
+
 .content-wrapper{
 	display: flex;
 	justify-content: center;
@@ -261,10 +332,10 @@ footer {
 }
 
 .wrapper{
+  width: 95%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-
 }
 
 .row-index{
@@ -274,7 +345,7 @@ footer {
 }
 
 .column-index {
-  width: 95%;
+  width: 100%;
   margin-bottom: 50px;
 }
 
@@ -286,39 +357,31 @@ footer {
 
 .card-index:hover{
 	background: #F5F5F5;
-	
 }
 
 .card-index img{
   width: 100%;
-  
+  object-fit: cover;
 }
 
 tbody{
-	
 	height:30px;
 }
 
 .tr-table{
 	height: 30px;
-	
 }
+
 .index-table{
-	 width: 100%;
-	 height : 150px;
-	
-}
-
-
-.container-index {
-
+  width: 100%;
+	height : 150px;
 }
 
 .title-index {
   color: #474e5d;
   font-size: 25px;
   margin-left:25px;  
-    margin-top:0px;
+  margin-top:0px;
   margin-bottom:0px;
 }
 
@@ -332,11 +395,46 @@ tbody{
   
 }
 
+@media screen and (max-width: 1344px) {
+  .wrapper{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
 /* //////////////////////////////////////// */ 
 /* ////////////////APROPOS//////////////// */ 
 /* ////////////////////////////////////// */  
 
-.column {
+.about-section {
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+/* .column {
   float: left;
   width: 25%;
   margin-bottom: 50px;
@@ -352,13 +450,6 @@ tbody{
   border-radius: 50%;
 }
 
-.about-section {
-  padding: 20px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
 .container {
   padding: 0 16px;
 }
@@ -371,6 +462,18 @@ tbody{
 
 .title {
   color: grey;
+}
+
+#row{
+  width: 95%;
+  margin-left: 2.5%;
+} */
+
+.wrapper3{
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 /* //////////////////////////////////////// */ 
