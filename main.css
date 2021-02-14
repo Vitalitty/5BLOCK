@@ -480,6 +480,144 @@ tbody{
 /* ////////////////DETAILS//////////////// */ 
 /* ////////////////////////////////////// */  
 
+@media screen and (max-width: 1024px) {
+  #detail_gauche {
+    width: 100%;
+    float: none;
+    height:auto;
+    display: block;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+  }
+
+  #detail_droite {
+    width: 100%;
+    float: none;
+    height:auto;
+    display: block;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+  }
+  .prev {
+    display: block;
+  }
+}
+
+
+/* TESSSSST */
+.form-detail{
+	
+	padding: 10px 20px;
+	background: #D6E3EF;
+	margin: 10px auto;
+	padding: 20px;
+	background: #D6E3EF;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-detail fieldset{
+	border: none;
+}
+.form-detail legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-detail  label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-detail input[type="text"],
+.form-detail input[type="date"],
+.form-detail input[type="datetime"],
+.form-detail input[type="email"],
+.form-detail input[type="file"],
+.form-detail input[type="number"],
+.form-detail input[type="search"],
+.form-detail input[type="time"],
+.form-detail input[type="url"],
+.form-detail textarea,
+.form-detail select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-detail input[type="text"]:focus,
+.form-detail input[type="file"]:focus,
+.form-detail input[type="date"]:focus,
+.form-detail input[type="datetime"]:focus,
+.form-detail input[type="email"]:focus,
+.form-detail input[type="number"]:focus,
+.form-detail input[type="search"]:focus,
+.form-detail input[type="time"]:focus,
+.form-detail input[type="url"]:focus,
+.form-detail textarea:focus,
+.form-detail select:focus{
+	background: #d2d9dd;
+}
+.form-detail select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-detail .number {
+	background: #00bfff;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-detail input[type="submit"],
+.form-detail input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #00bfff;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #1680a00f;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-detail input[type="submit"]:hover,
+.form-detail input[type="button"]:hover
+{
+	background: #85DDF4;
+}
+
+
+
+
+
+
+/* ********************/
+
 #detail {
   height: 100%;
   width: 100%;
