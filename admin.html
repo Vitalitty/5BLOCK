@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Sup' Estates</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+
+	<body>
+
+		<!-- HEADER -->
+		<header>
+			<div class="header-img">
+				<div class="header">
+					<a href="index.html" id="logo">Sup' Estate</a>
+					<div class="header-right">
+						<a class="active" href="index.html">Accueil</a>
+						<a href="vendre.html">Vendre</a>
+						<a href="a_propos.html">A Propos</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="about-section">
+			<p class="class-p">Cette page vous permet de<br>
+			modifier la commission appliquée sur chaques ventes ou de la récupérer.</p>
+		</div>
+		
+		<main>
+			<form class="form-detail2" id="admin--withdraw">
+				<h1 class="grand-titre2">Page administrateur</h1>
+				<fieldset>
+					<legend><span class="number">1</span>Retrait des frais de commission</legend>
+					<div>
+						Frais de commission disponibles :
+						<span id="admin--withdraw--avail-balance">5.5</span> ETH.&nbsp;
+						<button id="admin--withdraw--reload-balance">↻</button>
+					</div>
+					<input type="submit" class="submit1" value="Retirer tous les frais de commission"/>
+				</fieldset>
+			</form>
+			<form class="form-detail2" id="admin--change-commission">
+				<fieldset>
+					<legend><span class="number">2</span>Modification des frais de commission</legend>
+					<div>
+						Frais de commission actuel :
+						<span id="admin--commission--num">10</span>
+						Wei tous les
+						<span id="admin--commission--denom">100</span>
+						Wei (<span id="admin--commission--as-pct">10</span> %)
+					</div>
+					<div>
+						Changer les frais de commission :
+						<input type="number" name="num" min="0" value="0">&nbsp;Wei
+						tous les
+						<input type="number" name="denom" min="1" value="1">&nbsp;Wei.
+						<input type="submit" class="submit2" value="Appliquer"/>
+					</div>
+					
+				</fieldset>
+			</form>
+		</main>
+	
+		<!-- FOOTER -->
+		<footer>
+			<div id="left">
+				<p id="p-left">Sup' Estate&nbsp;&copy;</p>
+			</div>
+
+			<div id="center">
+				<p id="p-center"> Mail : supestate@existepas.com </p>
+				<p id="p-center"> Tel. : 04 00 00 00 00 </p>
+				<p id="p-center">25 AVENUE DE N'IMPORTE OU QUI N'EXISTE PAS 00000 PARADIS</p>
+			</div> 
+
+			<div id="right">
+				<a href="a_propos.html" id="p-right" class="no-deco">À Propos&nbsp;&#9654;</a>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
