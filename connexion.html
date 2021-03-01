@@ -24,17 +24,29 @@
 		</header>
 		
 		<div class="about-section">
-			<h1 class="grand-titre">/!\ Votre wallet n'est pas connecté /!\</h1>
+			<h1 class="grand-titre">&#9888; Votre wallet n'est pas connecté &#9888;</h1>
 		</div>
 		
 		<main>
-			<p class="class-p">
-				Cette section requiert que vous ayez autorisé au moins un de vos comptes MetaMask à interagir avec ce site.<br>
-				Pour connecter votre compte actuel,	et vous permettre d'administrer vos biens, veuillez cliquer sur le bouton de connexion ci-dessous.
-			</p>
-			<form>
-				<button type="submit">Se connecter</button>
-			</form>
+			<div class="bar warn">
+				<div id="warn_gauche">
+					<p>
+						<i class="ico">&#9888;</i> Cette section requiert que vous ayez autorisé au moins un de vos comptes MetaMask à interagir avec ce site.
+						Pour connecter votre compte actuel,	et vous permettre d'administrer vos biens, veuillez cliquer sur le bouton de connexion ci-contre.
+					</p>
+				</div>
+				<div id="warn_droite">
+					<form>
+						<input type="submit" class="enableEthereumButton btn"value="Se connecter"/>
+					</form>
+					<script>
+						const ethereumButton = document.querySelector('.enableEthereumButton');
+						ethereumButton.addEventListener('click', () => {
+						ethereum.request({ method: 'eth_requestAccounts' });
+						});
+					</script>
+				</div>
+			</div>
 		</main>
 	
 		<!-- FOOTER -->
