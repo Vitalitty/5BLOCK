@@ -22,87 +22,89 @@
 				</div>
 			</div>
 		</header>
+		
+		<main>
+			<div class="about-section">
+				<h1 class="grand-titre">Détails du token</h1>
+			</div>
 
-		<div class="about-section">
-			<h1 class="grand-titre">Détails du token</h1>
-		</div>
+			<!-- CONTENT -->
+			<div id="detail">
+				<div id="detail_gauche">
+					<div class="slideshow-container">
 
-		<!-- CONTENT -->
-		<div id="detail">
-			<div id="detail_gauche">
-				<div class="slideshow-container">
-
-					<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<img src='images\\maison.jpg' style="width:100%">
-					<div class="text">Image maison 1</div>
+						<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img src='images\\maison.jpg' style="width:100%">
+						<div class="text">Image maison 1</div>
+						</div>
+						
+						<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<img src='images\\maison.jpg' style="width:100%">
+						<div class="text">Image maison 2</div>
+						</div>
+						
+						<div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+						<img src='images\\maison.jpg' style="width:100%">
+						<div class="text">Image maison 3</div>
+						</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
 					</div>
-					
-					<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<img src='images\\maison.jpg' style="width:100%">
-					<div class="text">Image maison 2</div>
-					</div>
-					
-					<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
-					<img src='images\\maison.jpg' style="width:100%">
-					<div class="text">Image maison 3</div>
-					</div>
-					
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					
+				
+					<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+						
+						function plusSlides(n) {
+							showSlides(slideIndex += n);
+						}
+						
+						function currentSlide(n) {
+							showSlides(slideIndex = n);
+						}
+						
+						function showSlides(n) {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("point");
+							if (n > slides.length) {slideIndex = 1} 
+							if (n < 1) {slideIndex = slides.length}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none"; 
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" act", "");
+							}
+							slides[slideIndex-1].style.display = "block"; 
+							dots[slideIndex-1].className += " act";
+						}
+					</script>
 				</div>
-			
-				<script>
-					var slideIndex = 1;
-					showSlides(slideIndex);
-					
-					function plusSlides(n) {
-						showSlides(slideIndex += n);
-					}
-					
-					function currentSlide(n) {
-						showSlides(slideIndex = n);
-					}
-					
-					function showSlides(n) {
-						var i;
-						var slides = document.getElementsByClassName("mySlides");
-						var dots = document.getElementsByClassName("point");
-						if (n > slides.length) {slideIndex = 1} 
-						if (n < 1) {slideIndex = slides.length}
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none"; 
-						}
-						for (i = 0; i < dots.length; i++) {
-							dots[i].className = dots[i].className.replace(" act", "");
-						}
-						slides[slideIndex-1].style.display = "block"; 
-						dots[slideIndex-1].className += " act";
-					}
-				</script>
-			</div>
 
-			<div id="detail_droite">
-					<form class="form-detail">
-						<fieldset>
-							<legend><span class="number">1</span> Informations générales</legend>
-							<input type="text" name="field1" placeholder="Titre du bien">
-							<input type="number" name="field2" placeholder="Prix du bien">
-							<p>Importer des images : <input type="file" name="field3"></p>
-							<input type="text" name="field4" placeholder="Ville">
-							<input type="number" name="field5" placeholder="Surface du bien">
-						</fieldset>
-						<fieldset>
-							<legend><span class="number">2</span> Description du bien</legend>
-							<textarea name="field6" placeholder="Description du bien"></textarea>
-						</fieldset>
-						<input type="submit" value="Soumettre les modifications" />
-					</form>	
+				<div id="detail_droite">
+						<form class="form-detail">
+							<fieldset>
+								<legend><span class="number">1</span> Informations générales</legend>
+								<input type="text" name="field1" placeholder="Titre du bien">
+								<input type="number" name="field2" placeholder="Prix du bien">
+								<p>Importer des images : <input type="file" name="field3"></p>
+								<input type="text" name="field4" placeholder="Ville">
+								<input type="number" name="field5" placeholder="Surface du bien">
+							</fieldset>
+							<fieldset>
+								<legend><span class="number">2</span> Description du bien</legend>
+								<textarea name="field6" placeholder="Description du bien"></textarea>
+							</fieldset>
+							<input type="submit" value="Soumettre les modifications" />
+						</form>	
+				</div>
 			</div>
-		</div>
+		</main>
 
 		<!-- FOOTER -->
 		<footer>

@@ -23,85 +23,87 @@
 			</div>
 		</header>
 
-		<div class="about-section">
-			<h1 class="grand-titre">Détails du token</h1>
-		</div>
+		<main>
+			<div class="about-section">
+				<h1 class="grand-titre">Détails du token</h1>
+			</div>
 
-		<!-- CONTENT -->
-		<div id="detail">
-			<div id="detail_gauche">
-				<div class="slideshow-container">
+			<!-- CONTENT -->
+			<div id="detail">
+				<div id="detail_gauche">
+					<div class="slideshow-container">
 
-					<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<img src='images\\maison.jpg' style="width:100%">
-					<div class="text">Image maison 1</div>
+						<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img src='images\\maison.jpg' style="width:100%">
+						<div class="text">Image maison 1</div>
+						</div>
+						
+						<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<img src='images\\maison.jpg' style="width:100%">
+						<div class="text">Image maison 2</div>
+						</div>
+						
+						<div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+						<img src='images\\maison.jpg' style="width:100%">
+						<div class="text">Image maison 3</div>
+						</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
 					</div>
 					
-					<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<img src='images\\maison.jpg' style="width:100%">
-					<div class="text">Image maison 2</div>
-					</div>
-					
-					<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
-					<img src='images\\maison.jpg' style="width:100%">
-					<div class="text">Image maison 3</div>
-					</div>
-					
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					
+					<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+						
+						function plusSlides(n) {
+							showSlides(slideIndex += n);
+						}
+						
+						function currentSlide(n) {
+							showSlides(slideIndex = n);
+						}
+						
+						function showSlides(n) {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("point");
+							if (n > slides.length) {slideIndex = 1} 
+							if (n < 1) {slideIndex = slides.length}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none"; 
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" act", "");
+							}
+							slides[slideIndex-1].style.display = "block"; 
+							dots[slideIndex-1].className += " act";
+						}
+					</script>
 				</div>
-				
-				<script>
-					var slideIndex = 1;
-					showSlides(slideIndex);
-					
-					function plusSlides(n) {
-						showSlides(slideIndex += n);
-					}
-					
-					function currentSlide(n) {
-						showSlides(slideIndex = n);
-					}
-					
-					function showSlides(n) {
-						var i;
-						var slides = document.getElementsByClassName("mySlides");
-						var dots = document.getElementsByClassName("point");
-						if (n > slides.length) {slideIndex = 1} 
-						if (n < 1) {slideIndex = slides.length}
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none"; 
-						}
-						for (i = 0; i < dots.length; i++) {
-							dots[i].className = dots[i].className.replace(" act", "");
-						}
-						slides[slideIndex-1].style.display = "block"; 
-						dots[slideIndex-1].className += " act";
-					}
-				</script>
-			</div>
 
-			<div id="detail_droite">
-					<form class="form-detail">
-						<fieldset>
-							<legend><span class="number">1</span> Informations générales</legend>
-							<div id="text">Titre : C'est une maison</div>
-							<div id="number">Prix : 2 000 000 $</div>
-							<div id="text">Ville : Clermont-Ferrand</div>
-							<div id="number">Surface : 1000 m2</div>
-						</fieldset>
-						<fieldset>
-							<legend><span class="number">2</span> Description du bien</legend>
-							<div id="textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan ligula. Sed sed diam pretium, molestie eros eu, tristique ex. Duis pharetra elit mi, ac molestie turpis pretium a. Aenean ac dapibus neque, sed suscipit magna. Aliquam finibus nibh eu cursus consectetur. Ut lorem erat, semper et augue ut, tempus rhoncus orci. Phasellus molestie dolor at quam egestas, et luctus ante feugiat. Duis ornare metus vitae semper hendrerit. Praesent vel erat ante. Ut vel bibendum leo. Morbi dignissim arcu sed odio efficitur dictum in in risus. Proin non sapien sem. Suspendisse ac mollis libero. Proin et arcu dictum, malesuada.</div>
-						</fieldset>
-						<input type="submit" value="Acheter" />
-					</form>
+				<div id="detail_droite">
+						<form class="form-detail">
+							<fieldset>
+								<legend><span class="number">1</span> Informations générales</legend>
+								<div id="text">Titre : C'est une maison</div>
+								<div id="number">Prix : 2 000 000 $</div>
+								<div id="text">Ville : Clermont-Ferrand</div>
+								<div id="number">Surface : 1000 m2</div>
+							</fieldset>
+							<fieldset>
+								<legend><span class="number">2</span> Description du bien</legend>
+								<div id="textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan ligula. Sed sed diam pretium, molestie eros eu, tristique ex. Duis pharetra elit mi, ac molestie turpis pretium a. Aenean ac dapibus neque, sed suscipit magna. Aliquam finibus nibh eu cursus consectetur. Ut lorem erat, semper et augue ut, tempus rhoncus orci. Phasellus molestie dolor at quam egestas, et luctus ante feugiat. Duis ornare metus vitae semper hendrerit. Praesent vel erat ante. Ut vel bibendum leo. Morbi dignissim arcu sed odio efficitur dictum in in risus. Proin non sapien sem. Suspendisse ac mollis libero. Proin et arcu dictum, malesuada.</div>
+							</fieldset>
+							<input type="submit" value="Acheter" />
+						</form>
+				</div>
 			</div>
-		</div>
+		</main>
 
 		<!-- FOOTER -->
 		<footer>

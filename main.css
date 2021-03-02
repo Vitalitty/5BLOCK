@@ -774,12 +774,12 @@ tbody {
 	background: #D6E3EF;
 }
 
-.grand-titre2 {
+/* .grand-titre2 {
   font-size: 35px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
-}
+} */
 
 .h2-admin {
 	font-size: 1.4em;
@@ -879,9 +879,9 @@ tbody {
     margin: 0;
   }
 
-  .grand-titre2 {
+  /* .grand-titre2 {
     margin-bottom: 20px;
-  }
+  } */
 }
 
 /* //////////////////////////////////////// */ 
