@@ -769,6 +769,11 @@ tbody {
 /* ////////////////ADMIN////////////////// */ 
 /* ////////////////////////////////////// */  
 
+.form-detail2 {
+	padding: 10px 20px;
+	background: #D6E3EF;
+}
+
 .grand-titre2 {
   font-size: 35px;
   text-align: center;
@@ -776,18 +781,47 @@ tbody {
   margin-bottom: 5px;
 }
 
-.form-detail2 {
-	padding: 10px 20px;
-	background: #D6E3EF;
-}
-
-.form-detail2 fieldset {
-	border: none;
-}
-
-.form-detail2 legend {
+.h2-admin {
 	font-size: 1.4em;
 	margin-bottom: 10px;
+}
+
+.form-detail2 .number {
+	background: #00bfff;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+#admin--withdraw--reload-balance {
+  font-size: 1.4em;
+}
+
+.submit1{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 10px auto;
+	background: #00bfff;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #1680a00f;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+.form-detail2 button[type="submit"]:hover {
+	background: #85DDF4;
 }
 
 .form-detail2 input[type="number"] {
@@ -813,36 +847,6 @@ tbody {
 	background: #d2d9dd;
 }
 
-.form-detail2 .number {
-	background: #00bfff;
-	color: #fff;
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	font-size: 0.8em;
-	margin-right: 4px;
-	line-height: 30px;
-	text-align: center;
-	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-	border-radius: 15px 15px 15px 0px;
-}
-
-.submit1{
-	position: relative;
-	display: block;
-	padding: 19px 39px 18px 39px;
-	color: #FFF;
-	margin: 0 auto;
-	background: #00bfff;
-	font-size: 18px;
-	text-align: center;
-	font-style: normal;
-	width: 100%;
-	border: 1px solid #1680a00f;
-	border-width: 1px 1px 3px;
-	margin-bottom: 10px;
-}
-
 .submit2{
 	position: relative;
 	padding: 19px 39px 18px 39px;
@@ -857,16 +861,9 @@ tbody {
 	margin-bottom: 10px;
 }
 
-.form-detail2 input[type="submit"]:hover {
-	background: #85DDF4;
-}
-
-.form-detail2 div {
-  margin-bottom: 10px;
-}
-
-#admin--withdraw--reload-balance {
-  font-size: 1.4em;
+#block *{
+  margin-top: 10px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 760px) {
