@@ -91,6 +91,13 @@ table {
   margin-bottom: 5px;
 }
 
+
+button:disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background: grey;
+}
+
 /* /////////////////////////////////////// */ 
 /* ////////////////HEADER//////////////// */ 
 /* ///////////////////////////////////// */ 
@@ -795,6 +802,7 @@ tbody {
 
 #admin--withdraw--reload-balance {
   font-size: 1.4em;
+  cursor: pointer;
 }
 
 .submit1{
@@ -811,6 +819,7 @@ tbody {
 	border: 1px solid #1680a00f;
 	border-width: 1px 1px 3px;
 	margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .form-detail2 button[type="submit"]:hover {
@@ -852,6 +861,7 @@ tbody {
 	border: 1px solid #1680a00f;
 	border-width: 1px 1px 3px;
 	margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #block *{
