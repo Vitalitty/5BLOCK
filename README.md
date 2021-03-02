@@ -63,7 +63,7 @@ The project will be graded as follows, on a 54/40 scale:
 - Technical documentation:  2 points
 - User documentation: 2 points
 - Bonuses: 14 points:
-- Edit token attribute: 2 points
-- Smart contract owner can change commission amount: 2 points
-- Contract source code is published and verified on Etherscan: 2 points
-- Token implements ERC-721: 8 points
+    - Edit token attribute: 2 points
+    - Smart contract owner can change commission amount: 2 points
+    - Contract source code is published and verified on Etherscan: 2 points
+    - Token implements ERC-721: 8 points
